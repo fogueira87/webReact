@@ -1,6 +1,129 @@
 {
-    "Welcome_to_React": "Bienvenido a react y react-i18next",
+   "navbar":{
     "Home" : "Inicio",
+    "hikes" : "Senderismo",
+    "RC": "Escalada en Roca",
+    "MC" : "Montañismo",
     "about" : "Quienes somos",
     "contact" : "Contacto"
+   },
+   "homeCover" :{
+    "primer_title_home":"Citlaltepetl",
+    "primer_p_home" :"Veracruz. Highest peak in Mexico",
+    "segundo_title_home":"segundo_title_home",
+    "segundo_p_home":"segundo_p_home",
+    "tercer_title_home":"tercer_title_home",
+    "tercer_p_home":"tercer_p_home",
+    "cuarto_title_home" : "cuarto_title_home",
+    "cuarto_p_home" : "cuarto_p_home",
+    "quinto_title_home" : "quinto_title_home",
+    "quinto_p_home" : "quinto_p_home",
+    "sexto_title_home" : "sexto_title_home",
+    "sexto_p_home" : "sexto_p_home",
+    "septimo_title_home" : "septimo_title_home",
+    "septimo_p_home" : "septimo_p_home",
+    "octavo_title_home" : "octavo_title_home",
+    "octavo_p_home" : "octavo_p_home",
+    "noveno_title_home" : "noveno_title_home",
+    "noveno_p_home" : "noveno_p_home",
+    "decimo_title_home" : "decimo_title_home",
+    "decimo_p_home" : "decimo_p_home",
+    "onceavo_title_home" : "onceavo_title_home",
+    "onceavo_p_home" : "onceavo_p_home",
+    "doceavo_title_home" : "doceavo_title_home",
+    "doceavo_p_home" : "doceavo_p_home",
+    "trece_title_home" : "trece_title_home",
+    "trece_p_home" : "trece_p_home",
+    "catorce_title_home" : "catorce_title_home",
+    "catorce_p_home" : "catorce_p_home",
+    "quince_title_home" : "quince_title_home",
+    "quince_p_home" : "quince_p_home"
+
+  },
+  "homeCards" :{
+
+    "Hikes":"Senderismo",
+    "Rock_Climbing" : "Escalada en Roca",
+    "Mountaneering": "Montañismo",
+    "texto_Hikes": "Ven a conocer lindos lugares antes de que lo matemos todo.",
+    "texto_rockclimb": "Boulders, peñas de hasta 30 metros y multilargos",
+    "texto_mont": "Visita nuestros volcanes mayores de 4000 m.s.n.m.",
+
+    "go" : "Ver mas"
+
+  },
+  "hikesPage":{
+  },
+  "escPage":{
+  },
+  "montCards":{
+    "titleCard1":"AXOCHCO",
+    "subtitleCard1":"Volcán Ajusco",
+    "textCard1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
+    "descriptionCard1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor lacus sem, ac euismod dolor sodales quis. Donec tincidunt gravida urna vitae volutpat. Aliquam id odio a nisl viverra dignissim. Integer facilisis porttitor orci eu aliquet. Cras bibendum lectus a eros faucibus, eu interdum lacus commodo. Sed congue vulputate lacus at viverra. In eu mattis erat. Proin accumsan elit est.",
+    "requireCard1":"requireCard1",
+    "altitudeCard1":"3,930 m",
+    "costCard1":"$ 2,000 mxn",
+    "lengthCard1":"Distancia Total : 8 km",
+
+    "titleCard2":"XINANTECATL",
+    "subtitleCard2":"Nevado de Toluca",
+    "textCard2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
+    "descriptionCard2":"descriptionCard2",
+    "requireCard2":"requireCard2",
+    "altitudeCard2":"4,680 m",
+    "costCard2":"costCard2",
+    "lengthCard2":"lengthCard2",
+
+    "titleCard3":"MATLALCUEYE",
+    "subtitleCard3":"subtitleCard3",
+    "textCard3":"textCard3",
+    "descriptionCard3":"descriptionCard3",
+    "requireCard3":"requireCard3",
+    "altitudeCard3":"4,420 m",
+    "costCard3":"costCard3",
+    "lengthCard3":"lengthCard3",
+
+    "titleCard4":"TLILTÉPETL",
+    "subtitleCard4":"subtitleCard4",
+    "textCard4":"textCard4",
+    "descriptionCard4":"descriptionCard4",
+    "requireCard4":"requireCard4",
+    "altitudeCard4":"4,580 m",
+    "costCard4":"costCard4",
+    "lengthCard4":"lengthCard4",
+
+    "titleCard5":"IZTACCIHUATL",
+    "subtitleCard5":"subtitleCard5",
+    "textCard5":"textCard5",
+    "descriptionCard5":"descriptionCard5",
+    "requireCard5":"requireCard5",
+    "altitudeCard5":"5,230 m",
+    "costCard5":"costCard5",
+    "lengthCard5":"lengthCard5",
+
+    "titleCard6":"CITLALTÉPETL",
+    "subtitleCard6":"subtitleCard6",
+    "textCard6":"textCard6",
+    "descriptionCard6":"descriptionCard6",
+    "requireCard6":"requireCard6",
+    "altitudeCard6":"5,636 m",
+    "costCard6":"costCard6",
+    "lengthCard6":"lengthCard6",
+
+    "titleCard7":"POPOCATÉPETL",
+    "subtitleCard7":"subtitleCard7",
+    "textCard7":"textCard7",
+    "descriptionCard7":"descriptionCard7",
+    "requireCard7":"requireCard7",
+    "altitudeCard7":"5,393 m",
+    "costCard7":"costCard7",
+    "lengthCard7":"lengthCard7"
+},
+  "aboutPage":{
+
+  },
+  "contactPage":{
+
+  }
 }

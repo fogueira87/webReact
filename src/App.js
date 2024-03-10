@@ -1,27 +1,33 @@
-import { useTranslation } from "react-i18next";
-import { Route, Routes } from "react-router-dom";
+
+import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import HikesPage from "./pages/HikesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import Navbar2 from "./components/Navbar2";
+import RCPage from "./pages/RCPage";
+import MCPage from "./pages/MCPage";
+
 
 
 
 function App() {
-const {t} = useTranslation()
+
 
   return (
    
     <div>
       <Navbar2 />
       <Routes>
-        <Route path="/" element={<HomePage/>} /> 
+        <Route exact path="/" element={<HomePage/>} /> 
+        <Route path="/hikes" element={<HikesPage/>} />
+        <Route path="/esc" element={<RCPage/>} /> 
+        <Route path="/mont" element={<MCPage/>} /> 
         <Route path="/about" element={<AboutPage/>} /> 
         <Route path="/contact" element={<ContactPage/>} /> 
+        <Route path="*" element = {<Navigate to="/"/>} />
       </Routes>
-      <div className="d-flex flex-column align-items-start" >
-        <h1 className="font-weight-normal mb-3">{t('Welcome_to_React')}</h1>
-      </div>
+
     </div>
   );
 }

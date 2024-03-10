@@ -1,7 +1,7 @@
 
-
 import CarouselPage from "../components/Carrusel"
-//import CardPage from "../components/CardsHome"
+import Card from "../components/HomeCards/Cards"
+
 
 const HomePage = () =>{
 
@@ -9,7 +9,9 @@ const HomePage = () =>{
         <>
        
         <CarouselPage/>
-        <h2>Coming Soon</h2>
+      
+        <Card/>
+        <h2 className="container p-4">Calendario</h2>
         
         
         </>

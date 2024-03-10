@@ -1,12 +1,16 @@
+//"use client";
+
+import AboutGallery from "../components/AboutGallery"
+
 
 
 const AboutPage = () =>{
 
     return(
-        <>
-        <h1>About Page</h1>
-        
-        </>
+        <div>
+
+                <AboutGallery/>
+        </div>
     )
 
 }

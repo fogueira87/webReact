@@ -1,0 +1,67 @@
+
+
+
+body{
+    background: radial-gradient(#e5e5e5,#ffff,#e5e5e5);
+}
+
+.row{
+    padding-bottom: 0.5rem;
+    width: auto;
+}
+
+.card{
+    width: auto;
+    height: 42rem;
+}
+
+.card-body{
+    padding: 0.8rem 0.7rem;
+    padding-top: 0.5rem;  
+    
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.255);
+  
+}
+
+.card-text{
+    font-size: 1rem;
+    padding: 0.4rem 0.2rem;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-fluid .row{
+    padding-top: 1rem;
+    
+
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+
+.card-img-top{
+    transform: scale(1);
+    transition: transform 1.5s ease;
+    
+}
+
+.card-img-top:hover{
+    transform: scale(1.2);
+}
+
+.Modal{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+

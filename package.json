@@ -1,11 +1,12 @@
 {
-  "name": "react_web",
-  "version": "0.1.0",
+  "name": "peak_squad_mx",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
     "flag-icon-css": "^4.1.7",
     "flag-icons": "^7.1.0",
@@ -16,6 +17,7 @@
     "react-bootstrap": "^2.10.1",
     "react-dom": "^18.2.0",
     "react-i18next": "^14.0.5",
+    "react-image-grid-gallery": "^2.0.1",
     "react-router-dom": "^6.22.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
