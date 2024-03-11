@@ -9,6 +9,9 @@ import i18next from 'i18next';
 import { Link } from 'react-router-dom';
 import "../App.css"
 import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+import cookies from 'js-cookie'
+
 
 
 
@@ -41,7 +44,14 @@ const GlobeIcon = ({width = 24, height=24}) => (
 
 function Navbar2() {
 
+  const currentLanguageCode = cookies.get('i18next') || 'en'
+ // const currentLanguage = languages.find(l => l.code === currentLanguageCode)
+
 const {t} = useTranslation()
+
+useEffect(()=>{
+  document.title = t('app.title')
+},[t])
   return (
 
     
@@ -62,9 +72,16 @@ const {t} = useTranslation()
                         
                         <li key={county_code}>
                             <div>
-                              <NavDropdown.Item className="dropdown-item p-1 ps-2 d-flex justify-content-around" 
-                              onClick={()=> i18next.changeLanguage(code)}>{name}
-                              <button className={`fi fi-${county_code} p-1 ps-4 `}>
+                              <NavDropdown.Item
+                              className="dropdown-item p-1 ps-2 d-flex justify-content-around" 
+                              onClick={()=> i18next.changeLanguage(code)}
+                              disabled = {code ===  currentLanguageCode}
+                              >
+                                {name}
+                              <button 
+                              className={`fi fi-${county_code} p-1 ps-4 `}
+                              style={{opacity: code === currentLanguageCode ? 0.5 : 1}}
+                              >
                                 </button>
                             </NavDropdown.Item>
                             </div>  

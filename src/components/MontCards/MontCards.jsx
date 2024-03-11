@@ -10,7 +10,7 @@ import ModMalinche4 from "../../images/faltaModal.jpg"
 import ModMalinche5 from "../../images/faltaModal.jpg"
 
 
-import CoverAjusco from "../../images/esc3.jpg"
+import CoverAjusco from "../../images/faltaModal.jpg"
 import ModAjusco1 from "../../images/faltaModal.jpg"
 import ModAjusco2 from "../../images/faltaModal.jpg"
 import ModAjusco3 from "../../images/faltaModal.jpg"
@@ -18,7 +18,7 @@ import ModAjusco4 from "../../images/faltaModal.jpg"
 import ModAjusco5 from "../../images/faltaModal.jpg"    
 
 
-import CoverSN from "../../images/esc4.jpg"
+import CoverSN from "../../images/faltaModal.jpg"
 import ModSN1 from "../../images/snmod1.jpeg"
 import ModSN2 from "../../images/snmod2.jpg"
 import ModSN3 from "../../images/faltaModal.jpg"
@@ -34,7 +34,7 @@ import ModPopo4 from "../../images/faltaModal.jpg"
 import ModPopo5 from "../../images/faltaModal.jpg"
 
 
-import CoverIzta from "../../images/esc6.jpg"
+import CoverIzta from "../../images/faltaModal.jpg"
 import ModIzta1 from "../../images/iztamod1.jpg"
 import ModIzta2 from "../../images/iztamod2.jpg"
 import ModIzta3 from "../../images/faltaModal.jpg"

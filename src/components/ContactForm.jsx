@@ -1,3 +1,5 @@
+"use client";
+
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -6,18 +8,16 @@ import { Container, Row } from 'react-bootstrap';
 import { useState } from 'react';
 import axios from 'axios';
 
-
 function BasicExample() {
     const{t} = useTranslation()
-    const [name, setName] = useState('  ')
-    const [lname, setLname] = useState('  ')
-    const [email, setEmail] = useState('  ')
-    const [comment, setComment] = useState('  ')
-
-
+    const [name, setName] = useState(' ')
+    const [lname, setLname] = useState(' ')
+    const [email, setEmail] = useState(' ')
+    const [comment, setComment] = useState(' ')
 
     const onSubmit = () => {
-      axios.post('https://sheet.best/api/sheets/a42167fd-0913-4de2-bd7c-384ef16f97fe',{
+      axios.post('https://sheet.best/api/sheets/a42167fd-0913-4de2-bd7c-384ef16f97fe',
+      {
         name, lname, email, comment
       })
       .then(response => console.log(response))
@@ -38,12 +38,6 @@ function BasicExample() {
       <InputGroup.Text  className='bg-dark opacity-75 border-success text-success w-15'>email</InputGroup.Text>
         <Form.Control type="email" placeholder="Enter email" className='bg-dark opacity-50  border-success text-success' onChange={(e)=> setEmail(e.target.value)}/>
       </InputGroup> 
-      <Form.Select aria-label="Default select example" className="mb-3 bg-dark opacity-75 border-success text-success">
-      <option>Open this select menu</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </Form.Select>
 
       <Form.Group 
       className="mb-3 bg-dark opacity-75  text-success" 
@@ -56,14 +50,13 @@ function BasicExample() {
         as="textarea" 
         rows={6}  
         className='bg-dark opacity-75 text-success border-success'
-        
         onChange={(e)=> setComment(e.target.value)} />
       </Form.Group>
       <Button 
       variant="dark text-success m-4"
        type="submit" 
        onClick={onSubmit}>
-        Submit
+      submit
       </Button>
     </Form>
     </Row>

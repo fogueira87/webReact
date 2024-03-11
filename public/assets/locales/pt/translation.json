@@ -1,4 +1,8 @@
 {
+   "app":{
+   "title": "PT TÍTULO "
+   },
+
     "navbar" :{
     "Home" : "Começar",
     "hikes" : "Caminhada",

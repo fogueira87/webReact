@@ -1,4 +1,8 @@
 {
+  "app":{
+    "title": "ES TITULO "
+    },
+
    "navbar":{
     "Home" : "Inicio",
     "hikes" : "Senderismo",

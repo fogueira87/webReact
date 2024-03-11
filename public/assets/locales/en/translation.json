@@ -1,4 +1,9 @@
 {
+
+  "app":{
+    "title": "EN TITLE "
+    },
+
     "navbar": {
         "Home" : "Home",
         "hikes" : "Hikes",
