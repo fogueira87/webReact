@@ -3,16 +3,16 @@ import Carousel from 'react-bootstrap/Carousel';
 import img1 from '../images/cover1.jpg'
 import img2 from '../images/cover2.jpg'
 import img3 from '../images/cover3.jpg'
-import img4 from '../images/cover4.jpg'
+
 import img5 from '../images/cover5.jpg'
-import img6 from '../images/cover6.JPG'
+import img6 from '../images/cover17.jpg'
 import img7 from '../images/cover7.jpg'
-import img8 from '../images/cover8.jpg'
-import img9 from '../images/cover9.JPG'
+
+
 import img10 from '../images/cover10.jpg'
 import img11 from '../images/cover11.JPG'
 import img12 from '../images/cover12.jpg'
-import img13 from '../images/cover13.jpg'
+
 import img14 from '../images/cover14.jpg'
 import img15 from '../images/cover15.jpg'
  import './Carrusel.css'
@@ -65,6 +65,7 @@ function CarouselPage() {
       </Carousel.Caption>
     </Carousel.Item>
 
+    {/*
     <Carousel.Item>
       <img style={{height:'70hv'}}
         className="d-block w-100"
@@ -76,6 +77,8 @@ function CarouselPage() {
         <p>{t("homeCover.cuarto_p_home")}</p>
       </Carousel.Caption>
     </Carousel.Item>
+
+    */}
 
     <Carousel.Item>
       <img style={{height:'70hv'}}
@@ -113,6 +116,7 @@ function CarouselPage() {
       </Carousel.Caption>
     </Carousel.Item>
 
+{/** 
     <Carousel.Item>
       <img style={{height:'70hv'}}
         className="d-block w-100"
@@ -136,6 +140,8 @@ function CarouselPage() {
         <p>{t("homeCover.noveno_p_home")}</p>
       </Carousel.Caption>
     </Carousel.Item>
+
+    */}
 
     <Carousel.Item>
       <img style={{height:'70hv'}}
@@ -172,7 +178,7 @@ function CarouselPage() {
         <p>{t("homeCover.doceavo_p_home")}</p>
       </Carousel.Caption>
     </Carousel.Item>
-
+{/**
     <Carousel.Item>
       <img style={{height:'70hv'}}
         className="d-block w-100"
@@ -184,6 +190,8 @@ function CarouselPage() {
         <p>{t("homeCover.trece_p_home")}</p>
       </Carousel.Caption>
     </Carousel.Item>
+
+     */}
 
     <Carousel.Item>
       <img style={{height:'70hv'}}

@@ -10,10 +10,10 @@ import axios from 'axios';
 
 function BasicExample() {
     const{t} = useTranslation()
-    const [name, setName] = useState(' ')
-    const [lname, setLname] = useState(' ')
-    const [email, setEmail] = useState(' ')
-    const [comment, setComment] = useState(' ')
+    const [name, setName] = useState('')
+    const [lname, setLname] = useState('')
+    const [email, setEmail] = useState('')
+    const [comment, setComment] = useState('')
 
     const onSubmit = () => {
       axios.post('https://sheet.best/api/sheets/a42167fd-0913-4de2-bd7c-384ef16f97fe',
@@ -50,7 +50,9 @@ function BasicExample() {
         as="textarea" 
         rows={6}  
         className='bg-dark opacity-75 text-success border-success'
-        onChange={(e)=> setComment(e.target.value)} />
+        onChange={(e)=> setComment(e.target.value)} 
+        
+        />
       </Form.Group>
       <Button 
       variant="dark text-success m-4"

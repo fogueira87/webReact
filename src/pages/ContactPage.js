@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import background from "../images/contact.jpg";
-import BasicExample from "../components/ContactForm";
+import ContactForm from "../components/ContactForm2";
 
  
 class ContactPage extends Component {
@@ -14,7 +14,7 @@ class ContactPage extends Component {
         return (
             <div style={myStyle}>
                
-                <BasicExample/>
+                <ContactForm/>
             </div>
         );
     }

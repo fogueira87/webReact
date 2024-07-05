@@ -1,12 +1,13 @@
 {
    "app":{
-   "title": "PT TÍTULO "
+   "title": "PT TÍTULO ",
+   "Msg_Servicio":"Muito Obrigado, vamos mandar um email com toda a informacao."
    },
 
     "navbar" :{
     "Home" : "Começar",
     "hikes" : "Caminhada",
-    "RC": "Escada em Roca",
+    "RC": "Escalada em rocha",
     "MC" : "Montanhismo",
     "about" : "Quem Somos",
     "contact" : "Contato"
@@ -14,11 +15,11 @@
     },
     "homeCover" :{
         "primer_title_home":"Citlaltepetl",
-        "primer_p_home" :"Veracruz. Highest peak in Mexico",
+        "primer_p_home" :"Pico mais alto do Mexico.",
         "segundo_title_home":"segundo_title_home",
         "segundo_p_home":"segundo_p_home",
-        "tercer_title_home":"tercer_title_home",
-        "tercer_p_home":"tercer_p_home",
+        "tercer_title_home":"Barracas do Cobre",
+        "tercer_p_home":"Barracas mais grandes do Mexico.",
         "cuarto_title_home" : "cuarto_title_home",
         "cuarto_p_home" : "cuarto_p_home",
         "quinto_title_home" : "quinto_title_home",
@@ -69,7 +70,13 @@
         "subtitleCard1":"O Vulcão Ajusco ",
         "textCard1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
         "descriptionCard1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor lacus sem, ac euismod dolor sodales quis. Donec tincidunt gravida urna vitae volutpat. Aliquam id odio a nisl viverra dignissim. Integer facilisis porttitor orci eu aliquet. Cras bibendum lectus a eros faucibus, eu interdum lacus commodo. Sed congue vulputate lacus at viverra. In eu mattis erat. Proin accumsan elit est.",
-        "requireCard1":"requireCard1",
+        "requireCard1":{
+        "gral" : "Requerimento geral",
+        "fisico" : "requerimientos fisicos",
+        "previos" : "requerimientos previos",
+        "equipo": "Todo el equipo que necesita",
+        "medicos": "Todos los requerimientos que médicos que pueda tener"
+        },
         "altitudeCard1":"3,930 m",
         "costCard1":" R$ 340.0",
         "lengthCard1":"Distância Total: 8 km",
@@ -78,7 +85,13 @@
         "subtitleCard2":"O Nevado de Toluca",
         "textCard2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
         "descriptionCard2":"descriptionCard2",
-        "requireCard2":"requireCard2",
+        "requireCard2":{
+            "gral" : "Requerimento geral",
+            "fisico" : "requerimientos fisicos",
+            "previos" : "requerimientos previos",
+            "equipo": "Todo el equipo que necesita",
+            "medicos": "Todos los requerimientos que médicos que pueda tener"
+            },
         "altitudeCard2":"4,680 m",
         "costCard2":"costCard2",
         "lengthCard2":"lengthCard2",
@@ -87,7 +100,13 @@
         "subtitleCard3":"subtitleCard3",
         "textCard3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
         "descriptionCard3":"descriptionCard3",
-        "requireCard3":"requireCard3",
+        "requireCard3":{
+            "gral" : "Requerimento geral",
+            "fisico" : "requerimientos fisicos",
+            "previos" : "requerimientos previos",
+            "equipo": "Todo el equipo que necesita",
+            "medicos": "Todos los requerimientos que médicos que pueda tener"
+            },
         "altitudeCard3":"4,420 m",
         "costCard3":"costCard3",
         "lengthCard3":"lengthCard3",
@@ -96,7 +115,13 @@
         "subtitleCard4":"subtitleCard4",
         "textCard4":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
         "descriptionCard4":"descriptionCard4",
-        "requireCard4":"requireCard4",
+        "requireCard4":{
+            "gral" : "Requerimento geral",
+            "fisico" : "requerimientos fisicos",
+            "previos" : "requerimientos previos",
+            "equipo": "Todo el equipo que necesita",
+            "medicos": "Todos los requerimientos que médicos que pueda tener"
+            },
         "altitudeCard4":"4,580 m",
         "costCard4":"costCard4",
         "lengthCard4":"lengthCard4",
@@ -105,7 +130,13 @@
         "subtitleCard5":"subtitleCard5",
         "textCard5":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
         "descriptionCard5":"descriptionCard5",
-        "requireCard5":"requireCard5",
+        "requireCard5":{
+            "gral" : "Requerimento geral",
+            "fisico" : "requerimientos fisicos",
+            "previos" : "requerimientos previos",
+            "equipo": "Todo el equipo que necesita",
+            "medicos": "Todos los requerimientos que médicos que pueda tener"
+            },
         "altitudeCard5":"5,230 m",
         "costCard5":"costCard5",
         "lengthCard5":"lengthCard5",
@@ -114,7 +145,13 @@
         "subtitleCard6":"subtitleCard6",
         "textCard6":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
         "descriptionCard6":"descriptionCard6",
-        "requireCard6":"requireCard6",
+        "requireCard6":{
+            "gral" : "Requerimento geral",
+            "fisico" : "requerimientos fisicos",
+            "previos" : "requerimientos previos",
+            "equipo": "Todo el equipo que necesita",
+            "medicos": "Todos los requerimientos que médicos que pueda tener"
+            },
         "altitudeCard6":"5,636 m",
         "costCard6":"costCard6",
         "lengthCard6":"lengthCard6",
@@ -123,7 +160,13 @@
         "subtitleCard7":"subtitleCard7",
         "textCard7":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
         "descriptionCard7":"descriptionCard7",
-        "requireCard7":"requireCard7",
+        "requireCard7":{
+            "gral" : "Requerimento geral",
+            "fisico" : "requerimientos fisicos",
+            "previos" : "requerimientos previos",
+            "equipo": "Todo el equipo que necesita",
+            "medicos": "Todos los requerimientos que médicos que pueda tener"
+            },
         "altitudeCard7":"5,393 m",
         "costCard7":"costCard7",
         "lengthCard7":"lengthCard7"

@@ -9,7 +9,9 @@ const Card = props => {
   
     
   return (
+    <Link  to={props.link} style={{ textDecoration: 'none' }}>
     <div className='card text-center shadow'>
+      
       <div className='overflow'>
         <img src={props.imgsrc} alt='someplace' className='card-img-top'/>
       </div>
@@ -17,10 +19,10 @@ const Card = props => {
       <div className='card-body text-dark text-center'>
         <h4 className='card-title'>{props.title}</h4>
         <p className='card-text text-secondary text-center'>{props.text}</p>
-        <Link to={props.link} className='btn btn-outline-info text-center'>{props.go}</Link>
-      
+        <button to={props.link} className='btn btn-outline-info text-center'>{props.go}</button>
       </div>
-    </div>
+     
+    </div> </Link>
   )
 }
 

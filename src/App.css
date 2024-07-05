@@ -1,6 +1,63 @@
 
 
+.text-home{
+  color: rgb(20, 124, 243);
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: 'Roboto';
+  font-style: normal;
+}
 
+.text-home2{
+  background-color: rgb(20, 124, 243);
+  color: aliceblue;
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: 'Roboto';
+  font-style: normal;
+  text-align: left;
+  list-style:none;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 1rem 0 1rem 1rem;
+  
+  
+}
+
+.text-hike{
+  background-color: rgb(12, 168, 19);
+  color: aliceblue;
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: 'Roboto';
+  font-style: normal;
+  text-align: left;
+  list-style:none;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 1rem 0 1rem 1rem;
+  
+  
+}
+
+.text-esc{
+  background-color: rgb(230, 105, 21);
+  color: aliceblue;
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: 'Roboto';
+  font-style: normal;
+  text-align: left;
+  list-style:none;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 1rem 0 1rem 1rem;
+  
+  
+}
 
 
 .roboto-thin {
@@ -75,8 +132,5 @@
   font-style: italic;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+
+

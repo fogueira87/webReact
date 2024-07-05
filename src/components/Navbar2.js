@@ -56,8 +56,8 @@ useEffect(()=>{
 
     
     <Navbar expand="lg" className="bg-dark" fixed='top' data-bs-theme="dark" style={{opacity:'0.6'}}>
-      <Container>
-        <Link to="/">Foeira</Link>
+      <Container style={{opacity:'0.7'}}>
+        <Link to="/" style={{textDecoration:'none', fontSize:'22px'}}>Peak Squad</Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className=" me-auto justify-content-end flex-grow-1 pe-5 m-2 w-95 ">
@@ -80,7 +80,7 @@ useEffect(()=>{
                                 {name}
                               <button 
                               className={`fi fi-${county_code} p-1 ps-4 `}
-                              style={{opacity: code === currentLanguageCode ? 0.5 : 1}}
+                              style={{opacity: code === currentLanguageCode ? 0.5 : 1, border: 0, fontSize:'14px'}}
                               >
                                 </button>
                             </NavDropdown.Item>

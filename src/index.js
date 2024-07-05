@@ -18,9 +18,9 @@ i18n
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
-    supportedLngs:['en','es','pt'],
+    supportedLngs:['es','en','pt'],
 
-    fallbackLng: "en",
+    fallbackLng: "es",
     detection:{
       order: [ 'path','htmlTag','localStorage', 'cookie', 'subdomain'],
       caches:['cookie']

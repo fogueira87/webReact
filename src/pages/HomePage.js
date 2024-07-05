@@ -1,6 +1,8 @@
 
 import CarouselPage from "../components/Carrusel"
 import Card from "../components/HomeCards/Cards"
+import Rules from "../components/Rules"
+import HomeText from "../components/Texts/Hometext"
 
 
 const HomePage = () =>{
@@ -11,7 +13,13 @@ const HomePage = () =>{
         <CarouselPage/>
       
         <Card/>
-        <h2 className="container p-4">Calendario</h2>
+        <div className="container p-4">
+          
+                <div>
+
+                </div>
+            <HomeText/>
+        </div>
         
         
         </>
