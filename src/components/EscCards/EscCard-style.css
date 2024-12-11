@@ -1,111 +1,55 @@
-
-
-
-body{
-    background: radial-gradient(#e5e5e5,#ffff,#e5e5e5);
-}
-
-.row{
-    padding-bottom: 0.5rem;
-    width: auto;
-}
-
-.card{
-    width: auto;
-    height: 48rem;
-}
-
-.card-subtitle{
+.card-body {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-}
-
-.card-body{
-    padding: 0.1rem 0.3rem;
-   
-    
-}
-
-.card:hover{
-    cursor: pointer;
-    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.255);
+    padding: 0.5rem;
+  }
   
-}
-
-.card-text, .p{
-    font-size: 0.87rem;
-    padding: 0.5rem 0.3rem;
-    text-align: justify;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    
-}
-
-.container-fluid .row{
-    padding-top: 0rem;
-    
-
-}
-
-.overflow{
-    overflow: hidden;
-}
-
-
-.card-img-top{
-    transform: scale(1);
-    transition: transform 1.5s ease;
-    height: 25rem;
-    
-}
-
-.card-img-top:hover{
-    transform: scale(1.2);
-}
-
-.modal{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.modal-header{
-
-    background-color: rgb(253, 251, 251);
-    padding-top: 0;
-    padding-right: 2;
-    padding-bottom: 0;
-}
-
-.modal-body{
-    
-    font-family: "Roboto", sans-serif;
-    background-color: rgba(233, 232, 238, 0.86);
-    line-height: 1.15;
-    font-weight: 300;
-    font-style: normal;
-    color: black;
-    text-align: justify;
-   
-
-
-}
-
-.modal li{
-    
-    list-style:none;
-    padding-left: 0em;
-
-}
-
-.modal-reserve{
-    
-    
-    color: #dbd5d5;
-    
-    font-weight: 300;
-    
-}
-
-
-
+  .card-title, .card-subtitle, .card-text {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-img-top {
+    height: auto;
+    /* Remove fixed heights if you don't need them */
+    object-fit: cover;
+  }
+  
+/* Custom Modal Size */
+.modal-custom-size .modal-dialog {
+    max-width: 80vw; /* Adjust as needed */
+  }
+  
+  .modal-custom-size .modal-content {
+    max-height: 80vh; /* Adjust as needed */
+    overflow-y: auto;
+  }
+  
+  /* Reserve Modal Styles */
+  .modal-reserve {
+    background-color: rgba(33, 37, 41, 0.95); /* Dark background with some transparency */
+    color: #fff; /* White text for better contrast */
+  }
+  
+  .modal-reserve .form-control,
+  .modal-reserve .form-select {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #495057;
+  }
+  
+  .modal-reserve .form-control:focus,
+  .modal-reserve .form-select:focus {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #80bdff;
+  }
+  
+  .modal-reserve ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .modal-reserve li {
+    padding-left: 0;
+  }

@@ -11,3 +11,14 @@
     
     
 }
+
+/* Smaller text on mobile devices */
+@media (max-width: 768px) {
+    .carousel-caption h3 {
+      font-size: 1.2rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }

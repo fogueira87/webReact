@@ -1,4 +1,5 @@
 {
+  "homepage": "https://fogueira87.github.io/webReact",
   "name": "peak_squad_mx",
   "version": "0.2.0",
   "private": true,
@@ -9,7 +10,7 @@
     "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
     "flag-icon-css": "^4.1.7",
-    "flag-icons": "^7.1.0",
+    "flag-icons": "^7.2.3",
     "i18next": "^23.10.0",
     "i18next-browser-languagedetector": "^7.2.0",
     "i18next-http-backend": "^2.5.0",
@@ -27,6 +28,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -50,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.2.0"
   }
 }

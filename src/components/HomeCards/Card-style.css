@@ -1,52 +1,58 @@
-
-
-
-body{
-    background: radial-gradient(#e5e5e5,#ffff,#e5e5e5);
+body {
+  background: radial-gradient(circle, #ffffff 0%, #e5e5e5 100%);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.card{
-    width: auto;
-    height: 20rem;
-    border-radius: 5px;
+.container-fluid .row {
+  padding-top: 3rem;
 }
 
-.card-body{
-    padding: 1rem 0;
-    
+.no-fixed-height.card {
+  height: auto !important;
 }
 
-.card:hover{
-    cursor: pointer;
-    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.255);
-    
-  
+/* Renamed to .my-card to avoid conflicts with Bootstrap’s .card */
+.my-card {
+  border-radius: 1px;
+  transition: box-shadow 3.3s ease;
 }
 
-.card-text{
-    font-size: 0.9rem;
-    padding: 0.4rem 3rem;
+/* Hover effect on my-card */
+.my-card:hover {
+  cursor: pointer;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2);
 }
 
-.container-fluid .row{
-    padding-top: 5rem;
-
+.overflow {
+  overflow: hidden;
+  border-radius: 3px;
 }
 
-.overflow{
-    overflow: hidden;
-    border-radius: 5px;
+.card-img-top {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  border-radius: 1px;
 }
 
-
-.card-img-top{
-    transform: scale(1);
-    transition: transform 5.5s ease;
-    border-radius: 5px;
-    
+.card-img-top:hover {
+  transform: scale(1.1);
+  border-radius: 5px;
 }
 
-.card-img-top:hover{
-    transform: scale(1.8);
-    border-radius: 5px;
+/* Renamed to .my-card-body to avoid conflicts with Bootstrap’s .card-body */
+.my-card-body {
+  padding: 0.5rem 1rem;
+}
+
+.card-title {
+  margin: 0.5rem 0;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  padding: 0;
+  text-align: center;
 }

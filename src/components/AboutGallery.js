@@ -1,5 +1,5 @@
 //"use client";
-
+import React, { useState } from 'react';
 import { ImageGallery } from "react-image-grid-gallery";
 import about1 from "../images/img13.jpg"
 import about2 from "../images/about2.JPG"
@@ -170,6 +170,28 @@ const imagesArray = [
 
   ];
 
+  function CustomImageRenderer({ image }) {
+    const [loaded, setLoaded] = useState(false);
+  
+    return (
+      <div style={{ width: '100%', position: 'relative' }}>
+        <img
+          src={image.src}
+          alt={image.alt}
+          loading="lazy"
+          onLoad={() => setLoaded(true)}
+          style={{
+            width: '100%',
+            height: 'auto',
+            filter: loaded ? 'none' : 'blur(10px)',
+            transition: 'filter 0.3s ease-out'
+          }}
+        />
+        {/* Optional: you can also place a spinner or skeleton here if desired */}
+      </div>
+    );
+  }
+
 
    function AboutGallery() {
     return (
@@ -177,6 +199,7 @@ const imagesArray = [
         imagesInfoArray={imagesArray}
         columnWidth={280}
         gapSize={3}
+        imageRenderer={CustomImageRenderer} // use the custom renderer
       />
     );
   }

@@ -2,113 +2,109 @@
 
 
 body{
-    background: radial-gradient(#e5e5e5,#ffff,#e5e5e5);
+  background: radial-gradient(#e5e5e5,#ffff,#e5e5e5);
 }
 
 .row{
-    padding-bottom: 0.5rem;
-    width: auto;
+  padding-bottom: 0.5rem;
+  width: auto;
 }
 
 .card{
-    width: auto;
-    height: 48rem;
+  width: auto;
+  height: 48rem;
 }
 
 .card-subtitle{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-body{
-    padding: 0.1rem 0.3rem;
-   
-    
-}
-
-.card:hover{
-    cursor: pointer;
-    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.255);
+  padding: 0.1rem 0.3rem;
+ 
   
 }
 
+.card:hover{
+  cursor: pointer;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.255);
+
+}
+
 .card-text, .p{
-    font-size: 0.87rem;
-    padding: 0.5rem 0.3rem;
-    text-align: justify;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    
+  font-size: 0.87rem;
+  padding: 0.5rem 0.3rem;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  
 }
 
 .container-fluid .row{
-    padding-top: 0rem;
-    
+  padding-top: 0rem;
+  
 
 }
 
 .overflow{
-    overflow: hidden;
+  overflow: hidden;
 }
 
 
 .card-img-top{
-    transform: scale(1);
-    transition: transform 1.5s ease;
-    height: 25rem;
-    
+  transform: scale(1);
+  transition: transform 1.5s ease;
+  height: 25rem;
+  
 }
 
 .card-img-top:hover{
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .modal{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .modal-header{
 
-    background-color: rgb(253, 251, 251);
-    padding-top: 0;
-    padding-right: 2;
-    padding-bottom: 0;
-    display: flex;
-    justify-content: center;
+  background-color: rgb(253, 251, 251);
+  padding-top: 0;
+  padding-right: 2;
+  padding-bottom: 0;
 }
 
-
-
 .modal-body{
-    
-    font-family: "Roboto", sans-serif;
-    background-color: rgba(233, 232, 238, 0.86);
-    line-height: 1.15;
-    font-weight: 300;
-    font-style: normal;
-    color: black;
-    text-align: justify;
-   
+  
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(233, 232, 238, 0.86);
+  line-height: 1.15;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+  text-align: justify;
+ 
 
 
 }
 
 .modal li{
-    
-    list-style:none;
-    padding-left: 0em;
+  
+  list-style:none;
+  padding-left: 0em;
 
 }
 
 .modal-reserve{
-    
-    
-    color: #dbd5d5;
-    
-    font-weight: 300;
-    
+  
+  
+  color: #dbd5d5;
+  
+  font-weight: 300;
+  
 }
 
 

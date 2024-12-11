@@ -1,0 +1,43 @@
+/* ContactForm.css */
+
+/* Enhance transparency for form controls */
+.contact-form .form-control {
+    background-color: rgba(255, 255, 255, 0.1); /* Increased transparency */
+    border: 1px solid rgba(25, 135, 84, 0.6); /* Semi-transparent success border */
+    color: #fff; /* White text for readability */
+  }
+  
+  .contact-form .form-control.is-invalid {
+    border-color: rgba(220, 53, 69, 0.8); /* Semi-transparent danger border for invalid inputs */
+  }
+  
+  /* Enhance placeholder text visibility */
+  .contact-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Adjusted opacity for better visibility */
+  }
+  
+  /* Enhance Form Labels */
+  .contact-form .form-label {
+    color: rgba(40, 167, 69, 0.9); /* Slightly transparent success color */
+    font-weight: 700; /* Make labels bolder */
+  }
+  
+  /* Enhance Submit Button */
+  .contact-form .btn-success {
+    background-color: rgba(40, 167, 69, 0.8); /* Semi-transparent green */
+    border-color: rgba(40, 167, 69, 0.8); /* Match border with background */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .contact-form .btn-success:hover {
+    background-color: rgba(40, 167, 69, 1); /* Fully opaque on hover */
+    border-color: rgba(40, 167, 69, 1); /* Fully opaque border on hover */
+  }
+  
+  /* Optional: Adjust container padding and margins for better spacing */
+  .contact-form {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  

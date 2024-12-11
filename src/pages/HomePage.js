@@ -1,7 +1,7 @@
 
 import CarouselPage from "../components/Carrusel"
 import Card from "../components/HomeCards/Cards"
-import Rules from "../components/Rules"
+//import Rules from "../components/Rules"
 import HomeText from "../components/Texts/Hometext"
 
 
@@ -9,18 +9,15 @@ const HomePage = () =>{
 
     return(
         <>
-       
-        <CarouselPage/>
-      
-        <Card/>
-        <div className="container p-4">
-          
-                <div>
-
+                <CarouselPage/>
+                <div className="p-4">
+                <Card/>
                 </div>
-            <HomeText/>
-        </div>
-        
+                
+                <div className="container p-2">
+                <HomeText/>
+                </div>
+                
         
         </>
     )

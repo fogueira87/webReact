@@ -8,7 +8,8 @@ import HttpApi from 'i18next-http-backend';
 import 'bootstrap/dist/js/bootstrap.min.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {BrowserRouter}  from "react-router-dom"
-
+import { I18nextProvider } from 'react-i18next';
+import { HashRouter } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
@@ -18,15 +19,21 @@ i18n
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
-    supportedLngs:['es','en','pt'],
-
+    ns: ['translation'],
+    defaultNS: 'translation',
+    react: { useSuspense: true },
+    debug: true,
+    supportedLngs:['es','en','pt','de','fr'],
+    //lng: 'es',
     fallbackLng: "es",
     detection:{
       order: [ 'path','htmlTag','localStorage', 'cookie', 'subdomain'],
       caches:['cookie']
     },
-    backend:{
-      loadPath: '/assets/locales/{{lng}}/translation.json',
+    backend: {
+      loadPath: process.env.PUBLIC_URL + '/assets/locales/{{lng}}/translation.json',
+      //loadPath: process.env.PUBLIC_URL + '/assets/locales/{{lng}}/translation.json',
+      //cambiar antes de hacer el deployment
     },
 
   });
@@ -38,9 +45,13 @@ i18n
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
+    <HashRouter>
+    <I18nextProvider i18n={i18n}>
+    <React.Suspense fallback={<div>Loading translations...</div>}>
+  <App />
+</React.Suspense>
+    </I18nextProvider>
+    </HashRouter>
   </React.StrictMode>
 );
 

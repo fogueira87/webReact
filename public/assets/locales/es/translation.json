@@ -274,11 +274,40 @@
     "altitudeCard7":"5,393 m",
     "costCard7":"No hay Salidas",
     "lengthCard7":"Distancia Total ≈ 10 km"
-},
+  },
   "aboutPage":{
 
   },
   "contactPage":{
 
+  },
+
+
+  "contact": {
+    "nombre": "Nombre",
+    "email": "Correo electrónico"
+  },
+  "message": {
+    "comment": "Comentario"
+  },
+  "placeholders": {
+    "name": "Ingrese su nombre",
+    "email": "Ingrese su correo electrónico",
+    "comment": "Ingrese su mensaje"
+  },
+  "buttons": {
+    "submit": "Enviar",
+    "submitting": "Enviando..."
+  },
+  "validation": {
+    "nameRequired": "El nombre es obligatorio.",
+    "nameInvalid": "El nombre solo puede contener letras y espacios.",
+    "emailRequired": "El correo electrónico es obligatorio.",
+    "emailInvalid": "Por favor, ingrese una dirección de correo electrónico válida."
+  },
+  "toast": {
+    "successMessage": "¡Gracias por tu mensaje!",
+    "errorMessage": "Algo salió mal. Por favor, inténtalo de nuevo."
   }
 }
+
