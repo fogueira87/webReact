@@ -13,12 +13,12 @@ class Cards extends Component{
         //const{t} =useTranslation()
         const { t } = this.props;
         return(
-            <div className="container-fluid d-flex justify-content-center pt-2">
-             <div className="row">
-              <div className="col-md-auto col-lg-4"><Card imgsrc={CoverHikes} title = {t('homeCards.Hikes')} text={t("homeCards.texto_Hikes")} go={t("homeCards.go")} link="/hikes"/></div>
-              <div className="col-md-auto col-lg-4"><Card imgsrc={CoverEscalada} title = {t("homeCards.Rock_Climbing")} text={t("homeCards.texto_rockclimb")} go={t("homeCards.go")} link="/esc"/></div>
-              <div className="col-md-auto col-lg-4"><Card imgsrc={CoverMontanha} title = {t("homeCards.Mountaneering")} text={t("homeCards.texto_mont")} go={t("homeCards.go")} link="/mont"/></div>   
-             </div>   
+            <div className="container-fluid d-flex justify-content-center pt-3">
+              <div className="row">
+                <div className="col-sm-12 col-md-6 col-lg-4"><Card imgsrc={CoverHikes} title = {t('homeCards.Hikes')} text={t("homeCards.texto_Hikes")} go={t("homeCards.go")} link="/hikes"/></div>
+                <div className="col-sm-12 col-md-6 col-lg-4"><Card imgsrc={CoverEscalada} title = {t("homeCards.Rock_Climbing")} text={t("homeCards.texto_rockclimb")} go={t("homeCards.go")} link="/esc"/></div>
+                <div className="col-sm-12 col-md-6 col-lg-4"><Card imgsrc={CoverMontanha} title = {t("homeCards.Mountaneering")} text={t("homeCards.texto_mont")} go={t("homeCards.go")} link="/mont"/></div>   
+              </div>   
             </div>
         )
     }

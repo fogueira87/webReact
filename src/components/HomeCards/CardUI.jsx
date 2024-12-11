@@ -19,7 +19,7 @@ const Card = props => {
       <div className='card-body text-dark text-center'>
         <h4 className='card-title'>{props.title}</h4>
         <p className='card-text text-secondary text-center'>{props.text}</p>
-        <button to={props.link} className='btn btn-outline-info text-center'>{props.go}</button>
+       
       </div>
      
     </div> </Link>
