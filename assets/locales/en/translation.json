@@ -1,0 +1,166 @@
+{
+
+  "app":{
+    "title": "EN TITLE ",
+    "Msg_Servicio":"Thank you very much, we´ll send you an email with all infomration."
+    },
+
+    "navbar": {
+        "Home" : "Home",
+        "hikes" : "Hikes",
+        "RC": "Rock Climbing",
+        "MC" : "Mountain Climbing",
+        "about" : "About us",
+        "contact" : "Contact"
+    },
+    "homeCover" :{
+      "primer_title_home":"Citlaltepetl",
+      "primer_p_home" :"Highest peak in Mexico.",
+      "segundo_title_home":"segundo_title_home",
+      "segundo_p_home":"segundo_p_home",
+      "tercer_title_home":"Copper Canyon",
+      "tercer_p_home":"Largest canyon in Mexico.",
+      "cuarto_title_home" : "cuarto_title_home",
+      "cuarto_p_home" : "cuarto_p_home",
+      "quinto_title_home" : "quinto_title_home",
+      "quinto_p_home" : "quinto_p_home",
+      "sexto_title_home" : "sexto_title_home",
+      "sexto_p_home" : "sexto_p_home",
+      "septimo_title_home" : "septimo_title_home",
+      "septimo_p_home" : "septimo_p_home",
+      "octavo_title_home" : "octavo_title_home",
+      "octavo_p_home" : "octavo_p_home",
+      "noveno_title_home" : "noveno_title_home",
+      "noveno_p_home" : "noveno_p_home",
+      "decimo_title_home" : "decimo_title_home",
+      "decimo_p_home" : "decimo_p_home",
+      "onceavo_title_home" : "onceavo_title_home",
+      "onceavo_p_home" : "onceavo_p_home",
+      "doceavo_title_home" : "doceavo_title_home",
+      "doceavo_p_home" : "doceavo_p_home",
+      "trece_title_home" : "trece_title_home",
+      "trece_p_home" : "trece_p_home",
+      "catorce_title_home" : "catorce_title_home",
+      "catorce_p_home" : "catorce_p_home",
+      "quince_title_home" : "quince_title_home",
+      "quince_p_home" : "quince_p_home"
+
+    },
+    "homeCards":{
+      "Hikes":"Hiking",
+      "Rock_Climbing" : "Rock Climbing",
+      "Mountaneering": "Mountain Climbing",
+  
+      "texto_Hikes": "Let's see amazing places before we kill it all.",
+      "texto_rockclimb": "Boulder, clifs up to 30 meters and multipiches.",
+      "texto_mont": "Come check our volcanoes with more than 4000 meters altitude.",
+  
+      "go" : "Take a look"
+    },
+    "montCards":{
+      "titleCard1":"AXOCHCO",
+      "subtitleCard1":"Ajusco Volcano",
+      "textCard1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
+      "descriptionCard1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor lacus sem, ac euismod dolor sodales quis. Donec tincidunt gravida urna vitae volutpat. Aliquam id odio a nisl viverra dignissim. Integer facilisis porttitor orci eu aliquet. Cras bibendum lectus a eros faucibus, eu interdum lacus commodo. Sed congue vulputate lacus at viverra. In eu mattis erat. Proin accumsan elit est.",
+      "requireCard1":{
+        "gral" : "Requerimento geral",
+        "fisico" : "requerimientos fisicos",
+        "previos" : "No previous experience required.",
+        "equipo": "Todo el equipo que necesita",
+        "medicos": "Todos los requerimientos que médicos que pueda tener"
+        },
+      "altitudeCard1":"12,894 ft",
+      "costCard1":"$ 150 USD",
+      "lengthCard1":"Total Distance: 5 mi",
+
+      "titleCard2":"XINANTECATL",
+      "subtitleCard2":"Nevado de Toluca",
+      "textCard2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
+      "descriptionCard2":"descriptionCard2",
+      "requireCard2":{
+        "gral" : "Requerimento geral",
+        "fisico" : "requerimientos fisicos",
+        "previos" : "No previous experience required.",
+        "equipo": "Todo el equipo que necesita",
+        "medicos": "Todos los requerimientos que médicos que pueda tener"
+        },
+      "altitudeCard2":"15,354 ft",
+      "costCard2":"costCard2",
+      "lengthCard2":"lengthCard2",
+
+      "titleCard3":"MATLALCUEYE",
+      "subtitleCard3":"subtitleCard3",
+      "textCard3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices porta augue, sed placerat orci ultricies at. Vivamus at consectetur arcu, sed sollicitudin neque. Quisque ut laoreet nibh. Fusce facilisis mi et ligula tempor, ac.",
+      "descriptionCard3":"descriptionCard3",
+      "requireCard3":{
+        "gral" : "Requerimento geral",
+        "fisico" : "requerimientos fisicos",
+        "previos" : "No previous experience required.",
+        "equipo": "Todo el equipo que necesita",
+        "medicos": "Todos los requerimientos que médicos que pueda tener"
+        },
+      "altitudeCard3":"14,567 ft",
+      "costCard3":"costCard3",
+      "lengthCard3":"lengthCard3",
+
+      "titleCard4":"TLILTÉPETL",
+      "subtitleCard4":"subtitleCard4",
+      "textCard4":"textCard4",
+      "descriptionCard4":"descriptionCard4",
+      "requireCard4":{
+        "gral" : "Requerimento geral",
+        "fisico" : "requerimientos fisicos",
+        "previos" : "No previous experience required.",
+        "equipo": "Todo el equipo que necesita",
+        "medicos": "Todos los requerimientos que médicos que pueda tener"
+        },
+      "altitudeCard4":"15,030 ft",
+      "costCard4":"costCard4",
+      "lengthCard4":"lengthCard4",
+
+      "titleCard5":"IZTACCIHUATL",
+      "subtitleCard5":"subtitleCard5",
+      "textCard5":"textCard5",
+      "descriptionCard5":"descriptionCard5",
+      "requireCard5":{
+        "gral" : "Requerimento geral",
+        "fisico" : "requerimientos fisicos",
+        "previos" : "No previous experience required.",
+        "equipo": "Todo el equipo que necesita",
+        "medicos": "Todos los requerimientos que médicos que pueda tener"
+        },
+      "altitudeCard5":"17,160 ft",
+      "costCard5":"costCard5",
+      "lengthCard5":"lengthCard5",
+
+      "titleCard6":"CITLALTÉPETL",
+      "subtitleCard6":"subtitleCard6",
+      "textCard6":"textCard6",
+      "descriptionCard6":"descriptionCard6",
+      "requireCard6":{
+        "gral" : "Requerimento geral",
+        "fisico" : "requerimientos fisicos",
+        "previos" : "No previous experience required.",
+        "equipo": "Todo el equipo que necesita",
+        "medicos": "Todos los requerimientos que médicos que pueda tener"
+        },
+      "altitudeCard6":"18,491 ft",
+      "costCard6":"costCard6",
+      "lengthCard6":"lengthCard6",
+
+      "titleCard7":"POPOCATÉPETL",
+      "subtitleCard7":"subtitleCard7",
+      "textCard7":"textCard7",
+      "descriptionCard7":"descriptionCard7",
+      "requireCard7":{
+        "gral" : "Requerimento geral",
+        "fisico" : "requerimientos fisicos",
+        "previos" : "No previous experience required.",
+        "equipo": "Todo el equipo que necesita",
+        "medicos": "Todos los requerimientos que médicos que pueda tener"
+        },
+      "altitudeCard7":"17,694 ft",
+      "costCard7":"costCard7",
+      "lengthCard7":"lengthCard7"
+  }
+}
