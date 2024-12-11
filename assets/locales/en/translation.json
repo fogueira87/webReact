@@ -280,5 +280,32 @@
   },
   "contactPage":{
 
+  },
+
+  "contact": {
+    "nombre": "Name",
+    "email": "Email"
+  },
+  "message": {
+    "comment": "Comment"
+  },
+  "placeholders": {
+    "name": "Enter your name",
+    "email": "Enter your email",
+    "comment": "Enter your message"
+  },
+  "buttons": {
+    "submit": "Submit",
+    "submitting": "Submitting..."
+  },
+  "validation": {
+    "nameRequired": "Name is required.",
+    "nameInvalid": "Name can only contain letters and spaces.",
+    "emailRequired": "Email is required.",
+    "emailInvalid": "Please enter a valid email address."
+  },
+  "toast": {
+    "successMessage": "Thank you for your message!",
+    "errorMessage": "Something went wrong. Please try again."
   }
 }

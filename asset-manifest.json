@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/webReact/static/css/main.6c7f4a61.css",
-    "main.js": "/webReact/static/js/main.f9769de3.js",
+    "main.css": "/webReact/static/css/main.01f561c2.css",
+    "main.js": "/webReact/static/js/main.25f4a8e7.js",
     "static/js/453.babe827a.chunk.js": "/webReact/static/js/453.babe827a.chunk.js",
     "static/media/ajuMod3.jpg": "/webReact/static/media/ajuMod3.99ad8dd6c21d683c8b5a.jpg",
     "static/media/ajuMod2.jpg": "/webReact/static/media/ajuMod2.a113422d9262cecfb613.jpg",
@@ -362,12 +362,12 @@
     "static/media/bd.svg": "/webReact/static/media/bd.0ad8c443ef4d47ea0497.svg",
     "static/media/pe.svg": "/webReact/static/media/pe.d64e9732fcaa8f765994.svg",
     "static/media/id.svg": "/webReact/static/media/id.f624e2c8444a7794b357.svg",
-    "main.6c7f4a61.css.map": "/webReact/static/css/main.6c7f4a61.css.map",
-    "main.f9769de3.js.map": "/webReact/static/js/main.f9769de3.js.map",
+    "main.01f561c2.css.map": "/webReact/static/css/main.01f561c2.css.map",
+    "main.25f4a8e7.js.map": "/webReact/static/js/main.25f4a8e7.js.map",
     "453.babe827a.chunk.js.map": "/webReact/static/js/453.babe827a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c7f4a61.css",
-    "static/js/main.f9769de3.js"
+    "static/css/main.01f561c2.css",
+    "static/js/main.25f4a8e7.js"
   ]
 }
