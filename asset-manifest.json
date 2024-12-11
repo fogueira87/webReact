@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/webReact/static/css/main.5a7ebb40.css",
-    "main.js": "/webReact/static/js/main.89f752b0.js",
+    "main.js": "/webReact/static/js/main.e6b491d3.js",
     "static/js/453.babe827a.chunk.js": "/webReact/static/js/453.babe827a.chunk.js",
     "static/media/ajuMod3.jpg": "/webReact/static/media/ajuMod3.99ad8dd6c21d683c8b5a.jpg",
     "static/media/ajuMod2.jpg": "/webReact/static/media/ajuMod2.a113422d9262cecfb613.jpg",
@@ -363,11 +363,11 @@
     "static/media/pe.svg": "/webReact/static/media/pe.d64e9732fcaa8f765994.svg",
     "static/media/id.svg": "/webReact/static/media/id.f624e2c8444a7794b357.svg",
     "main.5a7ebb40.css.map": "/webReact/static/css/main.5a7ebb40.css.map",
-    "main.89f752b0.js.map": "/webReact/static/js/main.89f752b0.js.map",
+    "main.e6b491d3.js.map": "/webReact/static/js/main.e6b491d3.js.map",
     "453.babe827a.chunk.js.map": "/webReact/static/js/453.babe827a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a7ebb40.css",
-    "static/js/main.89f752b0.js"
+    "static/js/main.e6b491d3.js"
   ]
 }
