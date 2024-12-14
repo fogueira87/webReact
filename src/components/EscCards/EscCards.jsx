@@ -119,7 +119,7 @@ const EscCards = () => {
       lengthKey: "EscCards.lengthCard2",
       usd: "$ 180 USD",
       eur: "$ 160 EU",
-      id: "aculco",
+      id: "jilotepec",
     },
     {
       imgsrc: CoverAculco,

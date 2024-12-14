@@ -79,9 +79,12 @@ function ContactForm() {
     };
 
     try {
-      const response = await axios.post('https://sheet.best/api/sheets/a42167fd-0913-4de2-bd7c-384ef16f97fe', contactData);
+      // POST to your Express endpoint that appends to Google Sheets
+      const response = await axios.post('http://localhost:1337/api/appendContact', contactData);
       console.log(response);
       toast.success(t('toast.successMessage'));
+      
+      // Reset form
       setFormData({ name: '', email: '', comment: '' });
     } catch (error) {
       console.error(error);

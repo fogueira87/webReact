@@ -15,7 +15,6 @@ const MontCard = (props) => {
   const [comment, setComment] = useState('');
   const [date, setDate] = useState('');
   const [people, setPeople] = useState('');
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const serviceData = {
@@ -26,17 +25,25 @@ const MontCard = (props) => {
       People: people,
       Comment: comment,
     };
-
-    axios.post('https://sheet.best/api/sheets/a42167fd-0913-4de2-bd7c-384ef16f97fe', serviceData)
-      .then(() => {
-        setName('');
-        setEmail('');
-        setDate('');
-        setPeople('');
-        setComment('');
+  
+    // Call our Express endpoint instead of sheet.best
+    axios
+      .post("http://localhost:1337/api/appendSheet", serviceData)
+      .then((response) => {
+        console.log("Response:", response.data);
+        // Clear form
+        setName("");
+        setEmail("");
+        setDate("");
+        setPeople("");
+        setComment("");
+        // Optionally close modal or show success message
+      })
+      .catch((err) => {
+        console.error("Error:", err);
+        // Optionally display an error message
       });
   };
-
   return (
     <div className='card text-center shadow pt-0' id={props.id}>
       <div className='overflow'>
