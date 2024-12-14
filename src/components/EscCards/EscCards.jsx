@@ -33,12 +33,12 @@ import ModBasa3 from "../../images/faltaModal.jpg";
 import ModBasa4 from "../../images/faltaModal.jpg";
 import ModBasa5 from "../../images/faltaModal.jpg";
 
-import CoverBernal from "../../images/coverPB.jpg";
-import ModBernal1 from "../../images/modPB1.jpg";
+import CoverBernal from "../../images/pbCover.jpg";
+import ModBernal1 from "../../images/pbMod4.jpg";
 import ModBernal2 from "../../images/modPB2.jpg";
 import ModBernal3 from "../../images/modPB1.jpg";
 import ModBernal4 from "../../images/modPB4.jpg";
-import ModBernal5 from "../../images/modPB1.jpg";
+import ModBernal5 from "../../images/pbMod5.jpg";
 
 import CoverDinamos from "../../images/citlaCover.jpg";
 import ModDinamos1 from "../../images/citlamod1.jpg";
@@ -105,7 +105,7 @@ const EscCards = () => {
       textKey: "EscCards.textCard2",
       goKey: "Reservar",
       status: "btn btn-outline-success",
-      imgsrcs: [ModAculco1, ModAculco2, ModAculco3, ModAculco4, ModAculco5],
+      imgsrcs: [ModJilo1, ModJilo2, ModJilo3, ModJilo4, ModJilo5],
       descriptionKey: "EscCards.descriptionCard2",
       requirements: {
         gral: "EscCards.requireCard2.gral",
@@ -190,7 +190,30 @@ const EscCards = () => {
       usd: "$ 170 USD",
       eur: "$ 150 EU",
       id: "bernal",
-    }
+    },
+    {
+      imgsrc: Coversanseb,
+      titleKey: "EscCards.titleCard8",
+      subtitleKey: "EscCards.subtitleCard8",
+      textKey: "EscCards.textCard8",
+      goKey: "Reservar",
+      status: "btn btn-outline-success",
+      imgsrcs: [ModSebas1, ModSebas2, ModSebas3, ModSebas4, ModSebas5],
+      descriptionKey: "EscCards.descriptionCard8",
+      requirements: {
+        gral: "EscCards.requireCard8.gral",
+        fisico: "EscCards.requireCard8.fisico",
+        previos: "EscCards.requireCard8.previos",
+        equipo: "EscCards.requireCard8.equipo",
+        medicos: "EscCards.requireCard8.medicos",
+      },
+      altitudeKey: "EscCards.altitudeCard8",
+      costKey: "EscCards.costCard8",
+      lengthKey: "EscCards.lengthCard8",
+      usd: "$ 170 USD",
+      eur: "$ 150 EU",
+      id: "sansebas",
+    },
   ];
 
   return (

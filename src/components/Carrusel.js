@@ -6,7 +6,7 @@ import img2 from '../images/cover2.jpg';
 import img3 from '../images/cover3.jpg';
 import img5 from '../images/cover5.jpg';
 import img17 from '../images/cover17.jpg';
-import img15 from '../images/cover15.jpg';
+import img15 from '../images/GOPR2259.JPG';
 import './Carrusel.css';
 import { useTranslation } from 'react-i18next';
 
@@ -21,6 +21,7 @@ function CarouselPage() {
   return (
     <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
       <Carousel fade>
+
         <Carousel.Item>
           <div
             onClick={() => handleNavigate('/mont', 'citlaltepetl')}
@@ -38,6 +39,8 @@ function CarouselPage() {
             <p>{t("homeCover.primer_p_home")}</p>
           </Carousel.Caption>
         </Carousel.Item>
+
+
 
         <Carousel.Item>
         <div
@@ -59,29 +62,39 @@ function CarouselPage() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <Link to="/hikes">
+              <a 
+                href="https://www.foeira.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
             <img
               style={{ height: '100vh', width: '100%', objectFit: 'cover' }}
               className="d-block w-100"
               src={img3}
               alt="Third slide"
             />
-          </Link>
+            </a>
+         
           <Carousel.Caption className="text-danger">
             <h3>{t("homeCover.tercer_title_home")}</h3>
             <p>{t("homeCover.tercer_p_home")}</p>
           </Carousel.Caption>
         </Carousel.Item>
 
+        
+
         <Carousel.Item>
-          <Link to="/mont">
+        <div
+            onClick={() => handleNavigate('/hikes', 'leones')}
+            style={{ cursor: 'pointer' }}
+          >
             <img
               style={{ height: '100vh', width: '100%', objectFit: 'cover' }}
               className="d-block w-100"
               src={img5}
               alt="Fifth slide"
             />
-          </Link>
+          </div>
           <Carousel.Caption>
             <h3>{t("homeCover.quinto_title_home")}</h3>
             <p>{t("homeCover.quinto_p_home")}</p>
@@ -89,14 +102,17 @@ function CarouselPage() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <Link to="/mont">
+        <div
+            onClick={() => handleNavigate('/hikes', 'arco')}
+            style={{ cursor: 'pointer' }}
+          >
             <img
               style={{ height: '100vh', width: '100%', objectFit: 'cover' }}
               className="d-block w-100"
               src={img17}
               alt="Chiapas"
             />
-          </Link>
+          </div>
           <Carousel.Caption>
             <h3>{t("homeCover.septimo_title_home")}</h3>
             <p>{t("homeCover.septimo_p_home")}</p>

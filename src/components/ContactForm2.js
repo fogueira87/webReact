@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Form, Button } from 'react-bootstrap';
 import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './ContactForm.css'; // Ensure this CSS file is correctly imported
 
@@ -156,20 +156,6 @@ function ContactForm() {
             {isSubmitting ? t('buttons.submitting') : t('buttons.submit')}
           </Button>
         </div>
-
-        {/* Toast Notifications */}
-        <ToastContainer
-          position="top-right"
-          autoClose={2000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="colored"
-        />
       </Form>
     </Container>
   );

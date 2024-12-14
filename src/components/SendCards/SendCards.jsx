@@ -17,7 +17,19 @@ import ModArco1 from "../../images/arcmod1.JPG";
 import ModArco2 from "../../images/arcmod2.jpg";
 import ModArco3 from "../../images/arcmod3.jpg";
 import ModArco4 from "../../images/arcmod4.JPG";
-import ModArco5 from "../../images/faltaModal.jpg";
+import ModArco5 from "../../images/arcmod5.jpg";
+
+
+import CoverBarrancas from "../../images/BarrCover.jpg";
+import ModBarr1 from "../../images/barrMod1.JPG";
+import ModBarr2 from "../../images/barrMod2.JPG";
+import ModBarr3 from "../../images/barrMod3.jpg";
+import ModBarr4 from "../../images/barrMod4.jpg";
+import ModBarr5 from "../../images/barrMod5.jpg";
+
+
+
+
 
 const SenCards = () => {
   const { t } = useTranslation();
@@ -81,6 +93,31 @@ const SenCards = () => {
       eur: "$ 160 EU",
       id: "arco",
     },
+
+    {
+      imgsrc: CoverBarrancas,
+      titleKey: "SenCards.titleCard9",
+      subtitleKey: "SenCards.subtitleCard9",
+      textKey: "SenCards.textCard9",
+      goKey: "Reservar",
+      status: "btn btn-outline-success",
+      imgsrcs: [ModBarr1, ModBarr2, ModBarr3, ModBarr4, ModBarr5],
+      descriptionKey: "SenCards.descriptionCard9",
+      requirements: {
+        gral: "SenCards.requireCard9.gral",
+        fisico: "SenCards.requireCard9.fisico",
+        previos: "SenCards.requireCard9.previos",
+        equipo: "SenCards.requireCard9.equipo",
+        medicos: "SenCards.requireCard9.medicos",
+      },
+      altitudeKey: "SenCards.altitudeCard9",
+      costKey: "SenCards.costCard9",
+      lengthKey: "SenCards.lengthCard9",
+      usd: "$ 170 USD",
+      eur: "$ 150 EU",
+      id: "barrancas",
+    },
+    
   ];
 
   return (

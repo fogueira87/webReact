@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Container, Modal, Row, Col, Form } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './EscCard-style.css';
 
@@ -45,6 +45,8 @@ const EscCard = (props) => {
     return newErrors;
   };
 
+
+
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -79,10 +81,15 @@ const EscCard = (props) => {
         // Close the modal (optional)
         handleCloseReserve();
         // Show toast notification
-        toast.success("Reserva enviada con éxito!");
+        toast.success("Reserva enviada con éxito!", {
+          autoClose: 2000,
+          pauseOnHover: false,
+          pauseOnFocusLoss: false,
+        });
       })
       .catch((err) => console.error(err))
       .finally(() => setIsSubmitting(false));
+      
   };
 
   return (
@@ -123,7 +130,7 @@ const EscCard = (props) => {
         <Modal.Header closeButton>
           <Modal.Title id={props.id} className='pb-0'>
             {props.title}
-            <Button id={props.id} className='mt-auto' variant={props.status} onClick={handleShowReserve}>
+            <Button id={props.id} className='p-2 ms-5' variant={props.status} onClick={handleShowReserve}>
               {props.go} {props.link}
             </Button> 
           </Modal.Title>
@@ -258,18 +265,7 @@ const EscCard = (props) => {
       </Modal>
 
       {/* ToastContainer for notifications */}
-      <ToastContainer
-        position="top-right"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="colored"
-      />
+
     </div>
   );
 };
