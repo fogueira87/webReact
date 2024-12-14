@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/webReact/static/css/main.b37d8128.css",
-    "main.js": "/webReact/static/js/main.5b320468.js",
+    "main.js": "/webReact/static/js/main.e8869aa0.js",
     "static/js/453.babe827a.chunk.js": "/webReact/static/js/453.babe827a.chunk.js",
     "static/media/arcmod4.JPG": "/webReact/static/media/arcmod4.9207f75fdc7642e55cdb.JPG",
     "static/media/arcmod1.JPG": "/webReact/static/media/arcmod1.7fdffdbf5480af29d138.JPG",
@@ -355,11 +355,11 @@
     "static/media/pe.svg": "/webReact/static/media/pe.d64e9732fcaa8f765994.svg",
     "static/media/id.svg": "/webReact/static/media/id.f624e2c8444a7794b357.svg",
     "main.b37d8128.css.map": "/webReact/static/css/main.b37d8128.css.map",
-    "main.5b320468.js.map": "/webReact/static/js/main.5b320468.js.map",
+    "main.e8869aa0.js.map": "/webReact/static/js/main.e8869aa0.js.map",
     "453.babe827a.chunk.js.map": "/webReact/static/js/453.babe827a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b37d8128.css",
-    "static/js/main.5b320468.js"
+    "static/js/main.e8869aa0.js"
   ]
 }
