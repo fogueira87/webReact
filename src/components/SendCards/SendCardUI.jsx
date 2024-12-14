@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import { Button, Container, Modal, Row, Col, Form } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import axios from 'axios';
-import './MontCard-style.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+//import './SendCard-style.css';
+import { useTranslation } from 'react-i18next';
 
-const MontCard = (props) => {
+const SendCard = (props) => {
+  const { t } = useTranslation();
+
   const [Show, setShow] = useState(false);
   const [ShowReserve, setShowReserve] = useState(false);
   const handleCloseReserve = () => setShowReserve(false);
@@ -16,8 +21,30 @@ const MontCard = (props) => {
   const [date, setDate] = useState('');
   const [people, setPeople] = useState('');
 
+  const validateForm = () => {
+    if (!name) {
+      toast.error(t('validation.name'));
+      return false;
+    }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      toast.error(t('validation.email'));
+      return false;
+    }
+    if (!date) {
+      toast.error(t('validation.date'));
+      return false;
+    }
+    if (!people || isNaN(people) || people <= 0) {
+      toast.error(t('validation.people'));
+      return false;
+    }
+    return true;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!validateForm()) return;
+
     const serviceData = {
       Id: props.id,
       Name: name,
@@ -29,11 +56,15 @@ const MontCard = (props) => {
 
     axios.post('https://sheet.best/api/sheets/a42167fd-0913-4de2-bd7c-384ef16f97fe', serviceData)
       .then(() => {
+        toast.success(t('validation.success'));
         setName('');
         setEmail('');
         setDate('');
         setPeople('');
         setComment('');
+      })
+      .catch(() => {
+        toast.error(t('validation.error'));
       });
   };
 
@@ -43,7 +74,7 @@ const MontCard = (props) => {
         <img 
           src={props.imgsrc} 
           onClick={() => setShow(true)}  
-          alt='someplace' 
+          alt={t('alt.image')} 
           className='card-img-top' 
           loading='lazy'
         />
@@ -112,56 +143,47 @@ const MontCard = (props) => {
           <Modal.Title>{props.subtitle}</Modal.Title>
         </Modal.Header>
         <Modal.Body className='bg-dark modal-reserve'>
-          <p>Text con indicaciones, Reglas, requisitos que serán enviados por correo electronico</p>
-          <ul>
-            <li>{props.requiref}</li>
-            <li>{props.requirep}</li>
-            <li>{props.requiree}</li>
-            <li>{props.requirem}</li>
-          </ul>
-        </Modal.Body>
-        <Modal.Body className='bg-dark modal-reserve'>
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formName" className='p-2'>
-              <Form.Label>Nombre</Form.Label>
+              <Form.Label>{t('form.name')}</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Tu nombre"
+                placeholder={t('form.namePlaceholder')}
                 className='bg-dark modal-reserve text-primary'
-                onChange={(e)=>setName(e.target.value)} 
+                onChange={(e) => setName(e.target.value)}
                 value={name}
               />
             </Form.Group>
 
             <Form.Group controlId="formEmail" className='p-2'>
-              <Form.Label>Email</Form.Label>
+              <Form.Label>{t('form.email')}</Form.Label>
               <Form.Control
                 type="email"
-                placeholder="name@example.com"
+                placeholder={t('form.emailPlaceholder')}
                 className='bg-dark modal-reserve text-primary'
-                onChange={(e)=>setEmail(e.target.value)} 
+                onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
             </Form.Group>
 
             <Form.Group controlId="formDate" className='p-2 text-white'>
-              <Form.Label>Fecha</Form.Label>
+              <Form.Label>{t('form.date')}</Form.Label>
               <Form.Control
                 type="date"
                 className='bg-dark modal-reserve text-white'
-                onChange={(e)=>setDate(e.target.value)} 
+                onChange={(e) => setDate(e.target.value)}
                 value={date}
               />
             </Form.Group>
 
             <Form.Group controlId="formPeople" className='p-2'>
-              <Form.Label>Acompañantes</Form.Label>
+              <Form.Label>{t('form.people')}</Form.Label>
               <Form.Select
                 className='bg-dark modal-reserve text-white'
-                onChange={(e)=>setPeople(e.target.value)} 
+                onChange={(e) => setPeople(e.target.value)}
                 value={people}
               >
-                <option value="">Selecciona</option>
+                <option value="">{t('form.selectOption')}</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -172,23 +194,34 @@ const MontCard = (props) => {
             </Form.Group>
 
             <Form.Group controlId="formComment" className="mb-3 p-2">
-              <Form.Label className="pt-1">Preguntas o comentarios</Form.Label>
+              <Form.Label>{t('form.comment')}</Form.Label>
               <Form.Control 
                 as="textarea" 
                 rows={3} 
                 className='bg-dark modal-reserve text-white'
-                onChange={(e)=>setComment(e.target.value)} 
+                onChange={(e) => setComment(e.target.value)}
                 value={comment}
               />
             </Form.Group>
+            <Button variant="primary" type="submit">{t('form.submit')}</Button>
           </Form>
         </Modal.Body>
-        <Modal.Footer className='bg-dark modal-reserve'>
-          <Button variant="primary" onClick={handleSubmit}>Save Changes</Button>
-        </Modal.Footer>
       </Modal>
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </div>
   );
 };
 
-export default MontCard;
+export default SendCard;
+

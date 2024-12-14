@@ -133,4 +133,61 @@
 }
 
 
+/* Card Body Styles */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.card-title, .card-subtitle, .card-text {
+  margin-bottom: 0.5rem;
+}
+
+.card-img-top {
+  height: auto;
+  object-fit: cover;
+}
+
+/* Custom Modal Size */
+.modal-custom-size .modal-dialog {
+  max-width: 80vw; /* Adjust as needed */
+}
+
+.modal-custom-size .modal-content {
+  max-height: 80vh; /* Adjust as needed */
+  overflow-y: auto;
+}
+
+/* Reserve Modal Styles */
+.modal-reserve {
+  background-color: rgba(33, 37, 41, 0.95); /* Dark background with transparency */
+  color: #fff; /* White text for better contrast */
+}
+
+.modal-reserve .form-control,
+.modal-reserve .form-select {
+  background-color: #343a40;
+  color: #fff;
+  border: 1px solid #495057;
+}
+
+.modal-reserve .form-control:focus,
+.modal-reserve .form-select:focus {
+  background-color: #343a40;
+  color: #fff;
+  border-color: #80bdff;
+}
+
+.modal-reserve ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-reserve li {
+  padding-left: 0;
+}
+
+
 
